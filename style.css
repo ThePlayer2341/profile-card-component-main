@@ -49,6 +49,8 @@ h2 {
 }
 
 ul {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -57,6 +59,18 @@ ul {
 li {
   display: inline-block;
   font-weight: bold;
+}
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  display: flex;
+  justify-content: bottom;
+  align-items: center;
 }
 
 p span {
