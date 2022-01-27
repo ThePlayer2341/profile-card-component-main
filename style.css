@@ -13,12 +13,11 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-* {
   margin: 0;
   padding: 0;
 }
+
+/* For mobile phones: */
 
 html {
   background: #fff url(./images/bg-pattern-top.svg) left top no-repeat,
@@ -67,14 +66,16 @@ li {
   align-items: center;
 }
 
+.attributes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .description {
   display: flex;
   justify-content: bottom;
   align-items: center;
-}
-
-p span {
-  font-weight: lighter;
 }
 
 .age {
@@ -114,13 +115,43 @@ header {
   padding-right: 3rem;
 }
 
-.user-card__bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 26px 18px 26px 26px;
+  place-items: center;
+}
+
+.grid p {
+  color: hsl(229, 23%, 23%);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.grid span {
+  color: hsl(0, 0%, 59%);
+}
+
+.figure {
+  text-align: center;
+}
+
+.figure__title {
+  margin-bottom: 1rem;
+  color: var(--color-very-dark-desaturated-blue);
+  font-weight: 700;
+}
+
+.figure__description {
+  color: var(--color-dark-grey);
+  font-size: 1.25rem;
+  letter-spacing: 1px;
 }
 
 .age {
   font-weight: lighter;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
 }
